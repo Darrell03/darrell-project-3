@@ -149,12 +149,12 @@ h3 {
   }
   .cover-letter-page h1 {
     font-size: 32px;
+    letter-spacing: 1px;
   }
   .cover-letter-page p {
     margin-bottom: 15px;
+    color: #444;
   }
-
-}
 
 /* Large devices (laptops/desktops, 1024px and up) */
 @media only screen and (min-width: 1024px) {
@@ -165,7 +165,7 @@ h3 {
     padding: 50px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     box-align: center;
-    border-radius: 8px;
+    border-radius: 12px;
   }
 
   .cover-letter-page .contact-info {
@@ -175,15 +175,10 @@ h3 {
     padding-bottom: 20px;
   }
 
-  .cover-letter-page .contact-info h1 {
-    margin: 0;
-    border: none;
-  }
-
   .cover-letter-page .contact-info p {
     margin: 5px 0;
     color: #369;
     font-weight: bold;
   }
-}
+
 
