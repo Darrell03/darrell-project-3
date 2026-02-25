@@ -160,9 +160,9 @@ h3 {
 @media only screen and (min-width: 1024px) {
   .cover-letter-page {
     background-color: #ffffff;
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 50px;
+    max-width: 900px;
+    margin: 0px auto;
+    padding: 20px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     box-align: center;
     border-radius: 12px;
