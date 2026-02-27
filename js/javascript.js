@@ -5,16 +5,53 @@ function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 4,
     center: myLatLng,
+    disableDefaultUI: false,
+    mapTypeControl: false
   });
 
-  new google.maps.Marker({
+  geocoder = new google.maps.Geocoder();
+
+  const marker new google.maps.Marker({
     position: myLatLng,
-    map,
+    map: map,
     title: "Hello World!",
+  });
+
+  const infoWindow = new google.maps.infoWindow({
+    content:`
+        <div class="map-popup">
+          <h4>Target Location</h4>
+          <p>This marker was placed using the Google Maps API.</p>
+        </div>`
+  });
+
+  maker.addListener("click", () => {
+    infoWindow.open({ anchor: marker, map })
+  });
+
+  document.getElementById("search-btn").addEventListener("click", () => {
+    const address = document.getElementById("input-city").value;
+    handleSearch(address);
   });
 }
 
-window.initMap = initMap;
+function handleSearch(address) {
+  geocoder.geocode({ address: address }, (results, status) => {
+    if (status === "OK") {
+      map.setCenter(results[0].geometry.location);
+      map.setZoom(15);
+      new google.maps.Marker({
+        map: map,
+        position: results[0].geometry.location,
+        animation: google.maps.Animation.DROP
+      });
+    } else {
+      console.error("Geocode failed: " + status);
+    }
+  });
+}
+
+/*window.initMap = initMap;
 
 /* Marker for Bentonville, AR. Home of Walmart! 
 
