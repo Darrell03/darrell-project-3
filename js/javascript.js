@@ -11,13 +11,14 @@ function initMap() {
 
   geocoder = new google.maps.Geocoder();
 
-  const marker new google.maps.Marker({
+  const marker = new google.maps.Marker({
     position: myLatLng,
     map: map,
-    title: "Hello World!",
+    title: "My home location!",
+    animation: google.maps.Animation.DROP
   });
 
-  const infoWindow = new google.maps.infoWindow({
+  const infoWindow = new google.maps.InfoWindow({
     content:`
         <div class="map-popup">
           <h4>Target Location</h4>
@@ -25,11 +26,11 @@ function initMap() {
         </div>`
   });
 
-  maker.addListener("click", () => {
+  marker.addListener("click", () => {
     infoWindow.open({ anchor: marker, map })
   });
 
-  document.getElementById("search-btn").addEventListener("click", () => {
+  document.getElementById("search-loc-btn").addEventListener("click", () => {
     const address = document.getElementById("input-city").value;
     handleSearch(address);
   });
@@ -46,7 +47,7 @@ function handleSearch(address) {
         animation: google.maps.Animation.DROP
       });
     } else {
-      console.error("Geocode failed: " + status);
+      console.error("Location not found: " + status);
     }
   });
 }

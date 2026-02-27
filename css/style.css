@@ -155,6 +155,7 @@ h3 {
     margin-bottom: 15px;
     color: #444;
   }
+}
 
 /* Large devices (laptops/desktops, 1024px and up) */
 @media only screen and (min-width: 1024px) {
@@ -180,6 +181,7 @@ h3 {
     color: #369;
     font-weight: bold;
   }
+}
 
 /***************************************
  *      MAP
