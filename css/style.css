@@ -168,14 +168,12 @@ h3 {
     box-align: center;
     border-radius: 12px;
   }
-
   .cover-letter-page .contact-info {
     text-align: center;
     border-bottom: 2px solid #003366;
     margin-bottom: 30px;
     padding-bottom: 20px;
   }
-
   .cover-letter-page .contact-info p {
     margin: 5px 0;
     color: #369;
