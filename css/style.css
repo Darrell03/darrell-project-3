@@ -181,4 +181,25 @@ h3 {
     font-weight: bold;
   }
 
+/***************************************
+ *      MAP
+ ****************************************/
 
+.map-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.map-container iframe {
+  flex: 1;
+  width: 1%;
+  max-width: 45%;       /* Matches the image width */
+  aspect-ratio: 16 / 9; 
+  margin: 0;
+  loading: lazy;
+  allowfullscreen:;
+  referrerpolicy:no-referrer-when-downgrade;
+}
