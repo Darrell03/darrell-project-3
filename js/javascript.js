@@ -16,7 +16,7 @@ function initMap() {
 
 window.initMap = initMap;
 
-/* Marker for Bentonville, AR. Home of Walmart! */
+/* Marker for Bentonville, AR. Home of Walmart! 
 
 function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
@@ -32,4 +32,4 @@ function initMap() {
   });
 }
 
-window.initMap = initMap;
+window.initMap = initMap;*/
