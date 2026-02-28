@@ -249,11 +249,3 @@ h3 {
 #search-loc-btn:hover {
   background-color: #357ae8;
 }
-
-.map-popup {
-  padding: 5px;
-  max-width: 200px;
-  line-height: 1.4;
-}
-
-
