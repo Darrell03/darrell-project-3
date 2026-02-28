@@ -185,7 +185,7 @@ h3 {
  *      MAP
  ****************************************/
 
-#map-container {
+#map {
   height: 600px;
   width: 100%;
   border-radius: 12px;
