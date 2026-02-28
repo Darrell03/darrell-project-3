@@ -127,6 +127,21 @@ h3 {
   margin: 0;            
 }
 
+.media-container3 {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.media-container3 img {
+  flex: 1;
+  max-width: 20%;       /* Prevents image from getting too large */
+  height: auto;%;
+  margin: 0;            
+}
+
 /***************************************
  *      COVER LETTER 
  ****************************************/
