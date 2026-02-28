@@ -76,7 +76,7 @@ function setupSlider(){
     sliderImg.id = "slider-img"
 
     //Create Bottons
-    const btnContainer = document,createElement("div");
+    const btnContainer = document.createElement("div");
     btnContainer.style.marginTop = "10px";
     btnContainer.style.textAlign = "center";
 
