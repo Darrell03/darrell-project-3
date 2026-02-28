@@ -39,6 +39,7 @@ function initMap() {
       handleSearch(address);
     });
   }
+}
 
 function handleSearch(address) {
   geocoder.geocode({ address: address }, (results, status) => {
