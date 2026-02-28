@@ -2,9 +2,10 @@ let map;
 let geocoder;
 
 function initMap() {
-  const myLatLng = { lat: 36.3729, lng: -94.2088 };
-    map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 4,
+  const myLatLng = { lat: 36.3729, lng: -94.2088 }; 
+  
+  map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 12,
     center: myLatLng,
     disableDefaultUI: false,
     mapTypeControl: false
@@ -20,10 +21,12 @@ function initMap() {
   });
 
   const infoWindow = new google.maps.InfoWindow({
-    content:`
+    content: `
         <div class="map-popup">
           <h4>Target Location</h4>
           <p>This marker was placed using the Google Maps API.</p>
+          <h4>Bentonville Headquarters</h4>
+          <p>The API is now connected!</p>
         </div>`
   });
 
@@ -48,8 +51,9 @@ function handleSearch(address) {
         animation: google.maps.Animation.DROP
       });
     } else {
-      console.error("Location not found: " + status);
+      alert("Location not found: " + status);
     }
   });
 }
+
 window.initMap = initMap;
