@@ -80,7 +80,7 @@ function setupSlider(){
     btnContainer.style.marginTop = "10px";
     btnContainer.style.textAlign = "center";
 
-    const prevBtn = docuement.createElement("button");
+    const prevBtn = document.createElement("button");
     prevBtn.innerText = "Previous";
     prevBtn.style.marginRight = "5px";
     prevBtn.onclick = () => {
