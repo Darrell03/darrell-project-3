@@ -23,8 +23,6 @@ function initMap() {
   const infoWindow = new google.maps.InfoWindow({
     content: `
         <div class="map-popup">
-          <h4>Target Location</h4>
-          <p>This marker was placed using the Google Maps API.</p>
           <h4>Bentonville Headquarters</h4>
           <p>The API is now connected!</p>
         </div>`
