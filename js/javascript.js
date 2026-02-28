@@ -15,7 +15,7 @@ function initMap() {
   const marker = new google.maps.Marker({
     position: myLatLng,
     map: map,
-    title: "My home location Bentonville, AR!",
+    title: "Bentonville, AR",
     animation: google.maps.Animation.DROP
   });
 
