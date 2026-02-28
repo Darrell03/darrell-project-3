@@ -1,5 +1,7 @@
 let map; 
 let geocoder;
+const sliderImages = ["./media/*.jpeg"];
+let imgIndex = 0;
 
 function initMap() {
   const myLatLng = { lat: 36.3729, lng: -94.2088 }; // Bentonville, AR
@@ -58,3 +60,42 @@ function handleSearch(address) {
 }
 
 window.initMap = initMap;
+
+//Slider Code starts here
+
+function setupSlider(){
+  const mediaContainer = document.querySelector(".media-container2");
+
+  if (mediaContainer) {
+    const sliderImg = mediaContainer.querySelector("img");
+    if (!sliderImg) return;
+
+    sliderImg.id = "slider-img"
+
+    //Create Bottons
+    const btnContainer = document,createElement("div");
+    btnContainer.style.marginTop = "10px";
+    btnContainer.style.textAlign = "center";
+
+    const prevBtn = docuement.createElement("button");
+    prevBtn.innerText = "Previous";
+    prevBtn.style.marginRight = "5px";
+    prevBtn.onclick = () => {
+      imgIndex = (imgIndex - 1 + sliderImages.length) % sliderImages.length;
+      sliderImg.src = sliderImages[imgIndex];
+    };
+
+    const nextBtn = document.createElement("button");
+    nextBtn.innerText = "Next";
+    nextBtn.onClick = () => {
+      imgIndex = (imgIndex + 1) % sliderImages.length;
+      sliderImg.src = sliderImages[imgIndex];
+    };
+
+    btnContainer.appendChild(prevBtn);
+    btnContainer.appendChild(nextBtn);
+    mediaContainer.appendChild(btnContainer);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", setupSlider)
