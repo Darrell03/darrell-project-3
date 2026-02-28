@@ -62,8 +62,6 @@ function handleSearch(address) {
   });
 }
 
-window.initMap = initMap;
-
 //Slider Code starts here
 
 function setupSlider(){
@@ -101,4 +99,5 @@ function setupSlider(){
   }
 }
 
+window.initMap = initMap;
 document.addEventListener("DOMContentLoaded", setupSlider)
