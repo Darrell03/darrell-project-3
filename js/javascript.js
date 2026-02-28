@@ -100,4 +100,4 @@ function setupSlider(){
 }
 
 window.initMap = initMap;
-document.addEventListener("DOMContentLoaded", setupSlider)
+document.addEventListener("DOMContentLoaded", setupSlider);
