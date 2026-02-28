@@ -1,6 +1,9 @@
 let map; 
 let geocoder;
-const sliderImages = ["./media/*.jpeg"];
+const sliderImages = [
+  "./media/IMG_3511.jpeg", 
+  "./media/IMG_8384.jpeg"
+];
 let imgIndex = 0;
 
 function initMap() {
