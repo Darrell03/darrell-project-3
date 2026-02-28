@@ -159,8 +159,13 @@ h3 {
 /* Medium devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .cover-letter-page {
-    background-color: #f4f4f4; /* Lighter background for tablets */
-    padding: 40px;
+    background-color: #ffffff;
+    max-width: 768px;
+    margin: 0px auto;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    box-align: center;
+    border-radius: 12px;
   }
   .cover-letter-page h1 {
     font-size: 32px;
@@ -176,7 +181,7 @@ h3 {
 @media only screen and (min-width: 1024px) {
   .cover-letter-page {
     background-color: #ffffff;
-    max-width: 900px;
+    max-width: 1024px;
     margin: 0px auto;
     padding: 20px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
