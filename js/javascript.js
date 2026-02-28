@@ -88,7 +88,7 @@ function setupSlider(){
 
     const nextBtn = document.createElement("button");
     nextBtn.innerText = "Next";
-    nextBtn.onClick = () => {
+    nextBtn.onclick = () => {
       imgIndex = (imgIndex + 1) % sliderImages.length;
       sliderImg.src = sliderImages[imgIndex];
     };
