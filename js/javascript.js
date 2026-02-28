@@ -3,7 +3,7 @@ let geocoder;
 
 function initMap() {
   const myLatLng = { lat: 36.3729, lng: -94.2088 };
-  const map = new google.maps.Map(document.getElementById("map"), {
+    map = new google.maps.Map(document.getElementById("map"), {
     zoom: 4,
     center: myLatLng,
     disableDefaultUI: false,
