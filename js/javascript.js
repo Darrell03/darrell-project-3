@@ -2,7 +2,7 @@ let map;
 let geocoder;
 
 function initMap() {
-  const myLatLng = { lat: -25.363, lng: 131.044 };
+  const myLatLng = { lat: 36.3729, lng: -94.2088 };
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 4,
     center: myLatLng,
@@ -15,7 +15,7 @@ function initMap() {
   const marker = new google.maps.Marker({
     position: myLatLng,
     map: map,
-    title: "My home location!",
+    title: "My home location Bentonville, AR!",
     animation: google.maps.Animation.DROP
   });
 
@@ -28,7 +28,7 @@ function initMap() {
   });
 
   marker.addListener("click", () => {
-    infoWindow.open({ anchor: marker, map })
+    infoWindow.open({ anchor: marker, map });
   });
 
   document.getElementById("search-loc-btn").addEventListener("click", () => {
