@@ -53,4 +53,4 @@ function handleSearch(address) {
   });
 }
 
-/*window.initMap = initMap;*/
+window.initMap = initMap;
