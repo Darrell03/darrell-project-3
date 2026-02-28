@@ -158,24 +158,17 @@ h3 {
 
 /* Medium devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .cover-letter-page {
-    background-color: #ffffff;
-    max-width: 768px;
-    margin: 0px auto;
-    padding: 20px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    box-align: center;
-    border-radius: 12px;
+  body { 
+    font-size: 18px; 
+    padding: 30px; 
   }
-  .cover-letter-page h1 {
-    font-size: 32px;
-    letter-spacing: 1px;
+  h1 { 
+    text-align: center; 
+    color: #002244; 
   }
-  .cover-letter-page p {
-    margin-bottom: 15px;
-    color: #444;
+  #main-navbar { 
+    border-bottom: 3px solid #369; 
   }
-}
 
 /* Large devices (laptops/desktops, 1024px and up) */
 @media only screen and (min-width: 1024px) {
