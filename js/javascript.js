@@ -31,11 +31,14 @@ function initMap() {
   marker.addListener("click", () => {
     infoWindow.open({ anchor: marker, map });
   });
-  
-  document.getElementById("search-loc-btn").addEventListener("click", () => {
-    const address = document.getElementById("input-city").value;
-    handleSearch(address);
-  });
+
+  const searchBtn = document.getElementById("search-loc-btn");
+  if (searchBtn) {
+    searchBtn.addEventListener("click", () => {
+      const address = document.getElementById("input-city").value;
+      handleSearch(address);
+    });
+  }
 }
 
 function handleSearch(address) {
