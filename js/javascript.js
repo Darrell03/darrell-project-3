@@ -52,5 +52,4 @@ function handleSearch(address) {
     }
   });
 }
-
 window.initMap = initMap;
