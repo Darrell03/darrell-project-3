@@ -80,7 +80,7 @@ function setupSlider(){
 
     const prevBtn = document.createElement("button");
     prevBtn.innerText = "Previous";
-    prevBtn.style.marginRight = "5px";
+    prevBtn.style.marginBottom = "5px";
     prevBtn.onclick = () => {
       imgIndex = (imgIndex - 1 + sliderImages.length) % sliderImages.length;
       sliderImg.src = sliderImages[imgIndex];
