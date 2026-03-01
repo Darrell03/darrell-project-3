@@ -113,9 +113,11 @@ h3 {
 }
 
 .media-container2 {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap:10pxd;
   margin: 20px 0;
-  text-align: left;
 }
 
 .media-container2 img {
