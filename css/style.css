@@ -121,7 +121,7 @@ h3 {
 }
 
 .media-container2 img {
-  max-width:100%;       
+  max-width:40%;       
   height:auto;
   display: block;            
 }
@@ -136,7 +136,7 @@ h3 {
 
 .media-container3 img {
   flex: 1;
-  max-width: 100%;       
+  max-width: 40%;       
   height:auto;
   display: block;            
 }
