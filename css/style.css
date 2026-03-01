@@ -116,7 +116,7 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap:10pxd;
+  gap:10px;
   margin: 20px 0;
 }
 
