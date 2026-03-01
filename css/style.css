@@ -174,10 +174,10 @@ h3 {
   padding: 0;
   display: flex;         /* Modern centering */
   justify-content: center;
-}
-
-#main-navbar ul li {
-  display: inline-block;
+  }
+  #main-navbar ul li {
+    display: inline-block;
+  }
 }
 
 /* Large devices (laptops/desktops, 1024px and up) */
@@ -249,3 +249,16 @@ h3 {
 #search-loc-btn:hover {
   background-color: #357ae8;
 }
+
+.map-popup {
+  padding: 5px;
+  max-width: 200px;
+  line-height: 1.4;
+}
+
+.map-popup h4 {
+  margin: 0 0 5px 0;
+  color:#4285F4;
+}
+
+
