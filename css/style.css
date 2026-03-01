@@ -122,7 +122,7 @@ h3 {
 
 .media-container2 img {
   width:40%;
-  max-width:40%;       
+  margin: 0 auto;       
   height:auto;
   display: block;            
 }
