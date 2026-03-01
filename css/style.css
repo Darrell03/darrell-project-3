@@ -114,30 +114,27 @@ h3 {
 
 .media-container2 {
   display: block;
-  flex-direction: column; 
-  align-items: center;   
-  gap: 10px;
   margin: 20px 0;
+  text-align: left;
 }
 
 .media-container2 img {
-  width: 60%;           
-  max-width: 350px;     
+  width: 45%;           
+  max-width: 200px;     
   height: auto;
-  border-radius: 8px;   
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 10px;
 }
 
 .media-container3 {
   display: block;
-  flex-direction: column; 
-  align-items: center;   
-  gap: 10px;
   margin: 20px 0;
 }
 
 .media-container3 img {
-  width: 50%;           
-  max-width: 350px;     
+  width: 30%;           
+  max-width: 250px;     
   height: auto;
   border-radius: 8px;   
 }
