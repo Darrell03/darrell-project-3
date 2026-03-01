@@ -76,7 +76,7 @@ function setupSlider(){
     //Create Bottons
     const btnContainer = document.createElement("div");
     btnContainer.style.marginTop = "10px";
-    btnContainer.style.textAlign = "center";
+    btnContainer.style.textAlign = "left";
 
     const prevBtn = document.createElement("button");
     prevBtn.innerText = "Previous";
